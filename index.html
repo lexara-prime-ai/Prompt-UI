@@ -21,18 +21,115 @@
 <body>
 
     <header>
-        <img src="./assets/logos/png/logo_color_no_bg.png" alt="logo" class="logo">
+        <!-- SIDE BAAR TOGGLE -->
+        <a class="side-bar-toggle-wrapper" onclick="fn_OPEN_SIDE_BAR()">
+            <i class="fa-solid fa-list menu-icon"></i>
+        </a>
     </header>
+
+    <section class="hero">
+        <img src="./assets/logos/png/logo_color_no_bg.png" alt="logo" class="logo">
+    </section>
 
     <!-- APP -->
     <main id="app">
         <!-- MAIN CONTAINER -->
         <div class="container">
             <!-- SIDE BAR -->
-            <!-- <div class="side-bar">
-                side bar
-            </div> -->
+            <div class="side-bar collapsed">
+                <!-- SIDE BAR HEADER -->
+                <div class="side-bar-header hidden">
+                    <h3 class="side-bar-title">
+                        <i class="fa-solid fa-square-plus new-chat-icon"></i>
+                        New chat
+                    </h3>
 
+                    <!-- CLOSE BUTTON -->
+                    <a class="close-btn-wrapper" onclick="fn_CLOSE_SIDE_BAR()">
+                        <i class="fa-solid fa-circle-xmark close-btn-icon"></i>
+                    </a>
+                </div>
+
+                <!-- SIDE BAR CONTENT -->
+                <div class="side-bar-content hidden">
+                    <!-- CHATS -->
+                    <a class="chat-history">
+                        <i class="fa-regular fa-message chat-icon"></i>
+
+                        <p class="chat">
+                            Lorem ipsum dolor, sit...
+                        </p>
+                    </a>
+
+                    <a class="chat-history">
+                        <i class="fa-regular fa-message chat-icon"></i>
+
+                        <p class="chat">
+                            Lorem ipsum dolor, sit...
+                        </p>
+                    </a>
+
+                    <a class="chat-history">
+                        <i class="fa-regular fa-message chat-icon"></i>
+
+                        <p class="chat">
+                            Lorem ipsum dolor, sit...
+                        </p>
+                    </a>
+
+                    <a class="chat-history">
+                        <i class="fa-regular fa-message chat-icon"></i>
+
+                        <p class="chat">
+                            Lorem ipsum dolor, sit...
+                        </p>
+                    </a>
+
+                    <a class="chat-history">
+                        <i class="fa-regular fa-message chat-icon"></i>
+
+                        <p class="chat">
+                            Lorem ipsum dolor, sit...
+                        </p>
+                    </a>
+
+                    <a class="chat-history">
+                        <i class="fa-regular fa-message chat-icon"></i>
+
+                        <p class="chat">
+                            Lorem ipsum dolor, sit...
+                        </p>
+                    </a>
+
+                    <a class="chat-history">
+                        <i class="fa-regular fa-message chat-icon"></i>
+
+                        <p class="chat">
+                            Lorem ipsum dolor, sit...
+                        </p>
+                    </a>
+                </div>
+
+                <!-- PROFILE INFO. -->
+                <div class="profile-info hidden">
+                    <div class="profile-avatar">
+                        <img src="./assets/avatars/user.png" alt="profile-avatar">
+
+                        <h2 class="profile-name">
+                            User
+                        </h2>
+                    </div>
+
+                    <!-- MENU TOGGLE | Additional info, Settings etc -->
+                    <div class="menu-toggle">
+                        <a class="menu-toggle-wrapper">
+                            <i class="fa-solid fa-square-poll-horizontal menu-toggle-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--=====*****=====-->
             <!-- CONTENT -->
             <div class="content">
 
@@ -41,7 +138,7 @@
 
                     <!--=====*****=====-->
                     <!-- OUTPUT FORMAT -->
-                    <div class="output-format">
+                    <div class="output-format reveal">
                         <!-- INPUT -->
                         <div class="provided-input">
                             <!-- AVATAR -->
@@ -83,7 +180,7 @@
 
                     <!--=====*****=====-->
                     <!-- OUTPUT FORMAT -->
-                    <div class="output-format">
+                    <div class="output-format reveal">
                         <!-- INPUT -->
                         <div class="provided-input">
                             <!-- AVATAR -->
@@ -131,7 +228,7 @@
 
                     <!--=====*****=====-->
                     <!-- OUTPUT FORMAT -->
-                    <div class="output-format">
+                    <div class="output-format reveal">
                         <!-- INPUT -->
                         <div class="provided-input">
                             <!-- AVATAR -->
@@ -181,7 +278,7 @@
         <div class="input-background">
             <input type="text" id="user-input" placeholder="Type something...">
             <!-- SUBMIT INPUT BUTTON -->
-            <a class="submit-user-input" onclick="ADJUST_INPUT_BOX_HEIGHT()" title="Send message...">
+            <a class="submit-user-input" onclick="fn_ADJUST_INPUT_BOX_HEIGHT()" title="Send message...">
                 <i class="fa-solid fa-paper-plane icon"></i>
             </a>
         </div>
